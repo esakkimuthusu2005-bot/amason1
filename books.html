@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+        font-family: Arial, sans-serif;
+     }
+    body { 
+        background-color: #e3e6e6;
+     }
+
+     header {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+     header h1{
+        margin-left: 400px;
+    }
+
+    .logo { 
+        font-size: 24px;
+         font-weight: bold; 
+         margin-right: 20px; 
+        }
+    .logo span { font-size: 18px; 
+        color: orange; 
+    }
+    button {
+      padding: 8px 12px;
+      background-color: #febd69;
+      border: none;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+         background-color: #f3a847;
+     }
+
+
+    .product-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .product-card:hover {
+         transform: scale(1.05); 
+        }
+
+    .product-card img {
+         width: 100%; 
+         height: auto;
+         }
+
+    .price {
+         font-weight: bold; 
+         color: #B12704; 
+         margin-top: 5px;
+         }
+
+         .add-to-cart {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #f0c14b;
+      border: 1px solid #a88734;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .add-to-cart:hover {
+         background-color: #e2b33c;
+         }
+
+    footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">amazon<span>.in</span></div>
+    <a href="./index.html"><button>back</button></a>
+  <h1>BOOKS</h1>
+  </header>
+
+    <section class="product-section">
+    <a href="#productDetails" class="product-card">
+      <img src="./1.webp" alt="Product">
+      <p>Product Name 1</p>
+      <p class="price">₹999</p>
+      <span class="add-to-cart">View Details</span>
+    </a>
+    <a href="#productDetails" class="product-card">
+      <img src="./2.webp" alt="Product">
+      <p>Product Name 2</p>
+      <p class="price">₹1,499</p>
+      <span class="add-to-cart">View Details</span>
+    </a>
+    <a href="#productDetails" class="product-card">
+      <img src="./3.webp" alt="Product">
+      <p>Product Name 3</p>
+      <p class="price">₹2,999</p>
+      <span class="add-to-cart">View Details</span>
+    </a>
+    <a href="#productDetails" class="product-card">
+      <img src="./4.webp" alt="Product">
+      <p>Product Name 4</p>
+      <p class="price">₹799</p>
+      <span class="add-to-cart">View Details</span>
+    </a>
+    <a href="#productDetails" class="product-card">
+    <img src="./5.webp" alt="Product 5">
+    <p>Product Name 5</p>
+    <p class="price">₹1,299</p>
+    <span class="add-to-cart">View Details</span>
+  </a>
+  <a href="#productDetails" class="product-card">
+    <img src="./6.webp" alt="Product 6">
+    <p>Product Name 6</p>
+    <p class="price">₹1,999</p>
+    <span class="add-to-cart">View Details</span>
+  </a>
+  <a href="#productDetails" class="product-card">
+    <img src="./7.webp" alt="Product 7">
+    <p>Product Name 7</p>
+    <p class="price">₹499</p>
+    <span class="add-to-cart">View Details</span>
+  </a>
+  <a href="#productDetails" class="product-card">
+    <img src="./8.webp" alt="Product 8">
+    <p>Product Name 8</p>
+    <p class="price">₹1,199</p>
+    <span class="add-to-cart">View Details</span>
+  </a>
+  <a href="#productDetails" class="product-card">
+  <img src="./9.webp" alt="Product 9">
+  <p>Product Name 9</p>
+  <p class="price">₹2,499</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./10.webp" alt="Product 10">
+  <p>Product Name 10</p>
+  <p class="price">₹1,199</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./11.webp" alt="Product 11">
+  <p>Product Name 11</p>
+  <p class="price">₹899</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./12.webp" alt="Product 12">
+  <p>Product Name 12</p>
+  <p class="price">₹2,799</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./13.webp" alt="Product 13">
+  <p>Product Name 13</p>
+  <p class="price">₹999</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./14.webp" alt="Product 14">
+  <p>Product Name 14</p>
+  <p class="price">₹3,499</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./15.webp" alt="Product 15">
+  <p>Product Name 15</p>
+  <p class="price">₹649</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./16.webp" alt="Product 16">
+  <p>Product Name 16</p>
+  <p class="price">₹749</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./17.webp" alt="Product 17">
+  <p>Product Name 17</p>
+  <p class="price">₹1,899</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./18.webp" alt="Product 18">
+  <p>Product Name 18</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./19.webp" alt="Product 19">
+  <p>Product Name 18</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./20.webp" alt="Product 20">
+  <p>Product Name 18</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./21.webp" alt="Product 21">
+  <p>jayasuriya</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./21.webp" alt="Product 22">
+  <p>jayasuriya</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./21.webp" alt="Product 23">
+  <p>jayasuriya</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+<a href="#productDetails" class="product-card">
+  <img src="./21.webp" alt="Product 24">
+  <p>jayasuriya</p>
+  <p class="price">₹2,099</p>
+  <span class="add-to-cart">View Details</span>
+</a>
+
+</section>
+
+<footer>
+ 
+  <div >
+    © 2025 Amazon Clone. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
