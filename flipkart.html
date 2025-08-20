@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Mobile Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f3f6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2874f0;
+      color: white;
+      padding: 10px 15px;
+      position: sticky;
+      top: 0;
+    }
+    .navbar h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .navbar input {
+      width: 60%;
+      padding: 6px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://source.unsplash.com/800x400/?shopping,mobile') no-repeat center/cover;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Products Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 15px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+    }
+    .product img {
+      width: 30%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product h3 {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    .product p {
+      color: green;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .btn {
+      background: #2874f0;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #172337;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Flipkart</h1>
+    <input type="text" placeholder="Search for products">
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    Big Sale on Mobiles 📱
+  </div>
+
+  <!-- Products -->
+  <div class="products">
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9xJ8lfvTpgR1qtm0YOQRK80GDFTRp0E98UJd1jg69juNSTvg4P-_z6aoVphF4B2HlsKh9X59WtWkJ1rHcPbpsE6FgGPuX3UzrfjPjzcN5lfIqhRjU4YRKvNIesRNvleerkHD8XF3Z_3c&usqp=CAc" alt="Product">
+      <h3>Samsung Galaxy</h3>
+      <p>₹14,999</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxcvbqKSDgvyoBdWDAzC8GlRzPY46psVA8yRo_zd5tFXFQfLPgC5D7B7uWtfJVOc1WCZsVVtl2RPy4sCtm0t4Xe11OZSspifaHChtqiLHtbSSIYlgvD33fgK3CKk0WTZC0YCJ_Sg&usqp=CAc" alt="Product">
+      <h3>Redmi Note</h3>
+      <p>₹12,499</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQmrUqzuW0ixTR3rjKG-LQQNcc6mshLPdq86ujq30JeR15PqWMYIeqN2scNnFSyKJ8yOpOURUZKY1U04h3PvSrldWJc8zT2ZUHJIWSAkKKc-Eom7pP0Fou8kFdWFHkIz_ELK_3eNOY&usqp=CAc" alt="Product">
+      <h3>iPhone 14</h3>
+      <p>₹69,999</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_7KW22bBQR1TfD4TUp1S3X36ZL-REuV4cqyl7p5eJ9E1Zh51bZcspb9jsRmAUdWY0wbGqanXS4qIcFbDcDQH0gg7SL0m5tuo0VgErQPHBlnMSRAxGhgzObY8aI4j9E7QLC0QMnQ&usqp=CAc" alt="Product">
+      <h3>OnePlus Nord</h3>
+      <p>₹29,499</p>
+      <button class="btn">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Flipkart Clone | Designed with ❤ in HTML & CSS
+  </footer>
+
+</body>
+</html>
